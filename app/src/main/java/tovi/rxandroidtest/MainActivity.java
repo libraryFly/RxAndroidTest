@@ -197,16 +197,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
             }
         });
-        List<String> lists = new ArrayList<>();
-        lists.add("ZhangSan");
-        lists.add("LiSi");
-        lists.add("WangWu");
-        Observable.from(lists).subscribe(new Action1<String>() {
-            @Override
-            public void call(String s) {
 
-            }
-        });
+
+//        List<String> lists = new ArrayList<>();
+//        lists.add("ZhangSan");
+//        lists.add("LiSi");
+//        lists.add("WangWu");
+//        Observable.from(lists).subscribe(new Action1<String>() {
+//            @Override
+//            public void call(String s) {
+//
+//            }
+//        });
     }
 
     private Observable<List<String>> query(String text) {
